@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h3>Todo-App</h3>
+      </div>
+      <div class="todo-container-search">
+          <input class="search-task" type="text" name="search" id="search-task" placeholder="Input Tasks Here.....">
+          <button class="search" id="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
+      <div class="todo-container" id="to-do-board">
+        <ul class="list">
+          <!-- get data from local storage -->
+        </ul>  
+        <button type="submit" class="todo-button">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          New Task
+        </button>    
+      </div>
+      
+      <div class="todo-container-details">
+        <span class="details">You have <span class="pending"></span> pending Tasks</span>
+        <button class="clear-all">Clear All</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
+
+

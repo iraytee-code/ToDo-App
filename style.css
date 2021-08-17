@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+   background-image: url(./background.jfif);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    color: #fff;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .top {
+    background-color: #9e019e;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  
+  .todo-container-search {
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px 5px #00000080, -2px -2px 5px #00000080;
+    color: #222;
+    width: 300px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .todo-container {
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px 5px #00000080, -2px -2px 5px #00000080;
+    color: #222;
+    width: 300px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin:  20px 0px;
+    max-height: 250px;
+    overflow-y: auto;
+    }
+  
+  
+  .search-task{
+    border: none;
+    appearance: none;
+    background-color:transparent;
+    padding: 5px;
+    outline: none;
+    border: solid 2px #9e019e;
+    border-radius: 5px;
+    width: 200px; 
+   }
+  
+   .search{
+     box-sizing: border-box;
+     padding: 5px 8px;
+     color: #ffffff;
+     background: #9e019e;
+     border: 2px solid #9e019e;
+     border-radius: 5px;
+     cursor: pointer;
+     opacity: 0.5;
+     pointer-events: none;
+   }
+  
+  
+   .search.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  
+  .todo-button {
+    background-color: #9e019e;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .todo-button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  
+  .list-item button{
+    background:none;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  .todo-container  li{
+    position: relative;
+    box-sizing: border-box;
+    height: 45px;
+    margin: 5px 5px;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 10px;
+    list-style: none;
+    line-height: 45px;
+    overflow: hidden;
+  }
+  
+  .todo-container  li span{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: -50px;
+    border-radius: 0px 10px 10px 0px;
+    background:#9e019e;
+    color: #f2f2f2;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+  }
+  
+  .todo-container  li:hover span{
+    right: 0;
+  }
+  
+  
+  .todo-container-details {
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px 5px #00000080, -2px -2px 5px #00000080;
+    color: #222;
+    width: 300px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin:  20px 0px;
+    }
+  
+  
+    .todo-container-details button{
+      box-sizing: border-box;
+      background: #9e019e;
+      padding: 8px;
+      outline: none;
+      border: solid 2px #9e019e;
+      border-radius: 10px;
+      color: #ffffff;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+   
+   
+    .todo-container-details button.active{
+     opacity: 1;
+     pointer-events: auto;
+   }
+   
+  
+    .todo-container-details span{
+      box-sizing: border-box;
+      padding: 0px 8px;
+    }
